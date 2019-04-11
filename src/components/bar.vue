@@ -14,8 +14,9 @@ export default {
         };
     },
     mounted() {
-        let chart = this.$refs.chart;
-        echarts.init(chart).setOption({
+        let chart = echarts.init(this.$refs.chart);
+        let option = 
+        chart.setOption({
             xAxis: {
                 type: 'category',
                 data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
