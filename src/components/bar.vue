@@ -15,8 +15,10 @@ export default {
     },
     mounted() {
         let chart = echarts.init(this.$refs.chart);
-        let option = 
-        chart.setOption({
+        let option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
             xAxis: {
                 type: 'category',
                 data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -28,7 +30,8 @@ export default {
                 data: [120, 200, 150, 80, 70, 110, 130],
                 type: 'bar'
             }]
-        });
+        }
+        chart.setOption(option);
     }
 };
 </script>
