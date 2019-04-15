@@ -7,6 +7,7 @@
 <script>
 import * as echarts from 'echarts';
 export default {
+    // 基本柱状图
     name: 'bar',
     data() {
         return {
