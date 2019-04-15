@@ -1,6 +1,10 @@
 /* eslint-disable */
 <template>
   <div id="app">
+    <span>图表类型：</span>
+    <select name="public-choice" v-model="activeChart">                                        
+        <option :value="chart.type" :key="chart.type" v-for="chart in chartList" >{{chart.name}}</option>                                    
+    </select>
     <component :is="activeChart"></component>
   </div>
 </template>
@@ -18,7 +22,17 @@ export default {
   },
   data() {
     return {
-      activeChart: 'pileBar'
+      activeChart: 'bar',
+      chartList:[
+          {
+            type: 'bar',
+            name: '基本柱状图'
+          },
+          {
+            type: 'pileBar',
+            name: '堆叠柱状图'
+          }
+      ],
     };
   }
 }
