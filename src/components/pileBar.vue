@@ -19,8 +19,8 @@ export default {
         let option = {
             tooltip : {
                 trigger: 'axis',
-                axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-                    type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                axisPointer : {            
+                    type : 'shadow'       
                 }
             },
             legend: {
@@ -73,9 +73,7 @@ export default {
                     data:[862, 1018, 964, 1026, 1679, 1600, 1570],
                     markLine : {
                         lineStyle: {
-                            normal: {
-                                type: 'dashed'
-                            }
+                            type: 'dashed'
                         },
                         data : [
                             [{type : 'min'}, {type : 'max'}]
