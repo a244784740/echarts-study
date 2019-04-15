@@ -83,7 +83,6 @@ export default {
                 {
                     name:'百度',
                     type:'bar',
-                    barWidth : 5,
                     stack: '搜索引擎',
                     data:[620, 732, 701, 734, 1090, 1130, 1120]
                 },
