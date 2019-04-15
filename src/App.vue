@@ -1,18 +1,25 @@
 /* eslint-disable */
 <template>
   <div id="app">
-    <bar></bar>
+    <component :is="activeChart"></component>
   </div>
 </template>
 
 <script>
 
 import bar from './components/bar.vue';
+import pileBar from './components/pileBar.vue';
 
 export default {
   name: 'app',
   components: {
-    bar
+    bar,
+    pileBar
+  },
+  data() {
+    return {
+      activeChart: 'pileBar'
+    };
   }
 }
 </script>
