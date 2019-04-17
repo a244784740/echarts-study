@@ -13,12 +13,14 @@
 
 import bar from './components/bar.vue';
 import pileBar from './components/pileBar.vue';
+import lineChart from './components/line.vue';
 
 export default {
   name: 'app',
   components: {
     bar,
-    pileBar
+    pileBar,
+    lineChart
   },
   data() {
     return {
@@ -31,6 +33,10 @@ export default {
           {
             type: 'pileBar',
             name: '堆叠柱状图'
+          },
+          {
+            type: 'lineChart',
+            name: '折线图'
           }
       ],
     };
