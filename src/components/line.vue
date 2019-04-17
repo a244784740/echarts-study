@@ -1,6 +1,6 @@
 <template>
     <div class="chart" id="main" ref="chart">
-        bar
+        line
     </div>
 </template>
 
