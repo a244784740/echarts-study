@@ -47,8 +47,6 @@ export default {
                 type: 'inside'
             }],
             visualMap: {
-                top: 10,
-                right: 10,
                 pieces: [{
                     gt: 0,
                     lte: 50,
