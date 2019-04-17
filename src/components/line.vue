@@ -37,9 +37,6 @@ export default {
             toolbox: {
                 left: 'center',
                 feature: {
-                    dataZoom: {
-                        yAxisIndex: 'none'
-                    },
                     restore: {},
                     saveAsImage: {}
                 }
@@ -85,21 +82,7 @@ export default {
                 type: 'line',
                 data: lineData.map(function (item) {
                     return item[1];
-                }),
-                markLine: {
-                    silent: true,
-                    data: [{
-                        yAxis: 50
-                    }, {
-                        yAxis: 100
-                    }, {
-                        yAxis: 150
-                    }, {
-                        yAxis: 200
-                    }, {
-                        yAxis: 300
-                    }]
-                }
+                })
             }
         }
         chart.setOption(option);
