@@ -6,7 +6,7 @@
 
 <script>
 import * as echarts from 'echarts';
-import * as eMap from './map/bmap';
+
 export default {
     name: 'eMap',
     data() {
