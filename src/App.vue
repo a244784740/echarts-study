@@ -14,13 +14,15 @@
 import bar from './components/bar.vue';
 import pileBar from './components/pileBar.vue';
 import lineChart from './components/line.vue';
+import eMap from './components/eMap.vue';
 
 export default {
   name: 'app',
   components: {
     bar,
     pileBar,
-    lineChart
+    lineChart,
+    eMap
   },
   data() {
     return {
@@ -37,6 +39,10 @@ export default {
           {
             type: 'lineChart',
             name: '折线图'
+          },
+          {
+            type: 'eMap',
+            name: '地图'
           }
       ],
     };
