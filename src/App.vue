@@ -14,6 +14,7 @@
 import bar from './components/bar.vue';
 import pileBar from './components/pileBar.vue';
 import lineChart from './components/line.vue';
+import stackLine from './components/stackLine.vue';
 import eMap from './components/eMap.vue';
 
 export default {
@@ -22,6 +23,7 @@ export default {
     bar,
     pileBar,
     lineChart,
+    stackLine,
     eMap
   },
   data() {
@@ -39,6 +41,10 @@ export default {
           {
             type: 'lineChart',
             name: '折线图'
+          },
+          {
+            type: 'stackLine',
+            name: '堆叠区域折线图'
           },
           {
             type: 'eMap',
