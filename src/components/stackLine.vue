@@ -18,10 +18,10 @@ export default {
         let chart = echarts.init(this.$refs.chart);
         let option = {
             title: {
-                text: '堆叠区域图'
+                text: '堆叠区域图'  // 图表标题
             },
             tooltip : {
-                trigger: 'axis',
+                trigger: 'axis',    // 图表提示类型为坐标轴提示
                 axisPointer: {
                     type: 'cross',
                     label: {
@@ -30,23 +30,23 @@ export default {
                 }
             },
             legend: {
-                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎'] // 图例
             },
-            toolbox: {
-                feature: {
-                    saveAsImage: {}
+            toolbox: {  // 工具箱
+                feature: {  // 特性
+                    saveAsImage: {} // 保存为图片
                 }
             },
-            grid: {
+            grid: { // 网格
                 left: '3%',
                 right: '4%',
                 bottom: '3%',
-                containLabel: true
+                containLabel: true  // 包含标签
             },
             xAxis : [
                 {
                     type : 'category',
-                    boundaryGap : true,
+                    boundaryGap : true,     // 类目粥，坐标留白策略为真，表示图表维度轴出现留白
                     data : ['周一','周二','周三','周四','周五','周六','周日']
                 }
             ],
@@ -60,9 +60,9 @@ export default {
                     name:'邮件营销',
                     type:'line',
                     stack: '总量',
-                    areaStyle: {},
+                    areaStyle: {},  // 区域展示，设置后折线图会变成区域图
                     data:[120, 132, 101, 134, 90, 230, 210],
-                    smooth: true
+                    smooth: true        //  折线平滑展示
                 },
                 {
                     name:'联盟广告',
