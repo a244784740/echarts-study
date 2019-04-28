@@ -17,6 +17,7 @@ import lineChart from './components/line.vue';
 import stackLine from './components/stackLine.vue';
 import pie from './components/pie.vue';
 import eMap from './components/eMap.vue';
+import circularPie from './components/circularPie';
 
 export default {
   name: 'app',
@@ -26,6 +27,7 @@ export default {
     lineChart,
     stackLine,
     pie,
+    circularPie,
     eMap
   },
   data() {
@@ -50,7 +52,11 @@ export default {
           },
           {
             type: 'pie',
-            name: '环形图'
+            name: '饼图'
+          },
+          {
+            type: 'circularPie',
+            name: '环形饼图'
           },
           {
             type: 'eMap',

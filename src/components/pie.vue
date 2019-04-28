@@ -7,7 +7,7 @@
 <script>
 import * as echarts from 'echarts';
 export default {
-    // 环形图
+    // 饼图
     name: 'pie',
     data() {
         return {
