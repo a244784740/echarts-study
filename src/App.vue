@@ -16,8 +16,10 @@ import pileBar from './components/pileBar.vue';
 import lineChart from './components/line.vue';
 import stackLine from './components/stackLine.vue';
 import pie from './components/pie.vue';
-import eMap from './components/eMap.vue';
 import circularPie from './components/circularPie';
+import rosePie from './components/rosePie';
+import eMap from './components/eMap.vue';
+
 
 export default {
   name: 'app',
@@ -28,6 +30,7 @@ export default {
     stackLine,
     pie,
     circularPie,
+    rosePie,
     eMap
   },
   data() {
@@ -57,6 +60,10 @@ export default {
           {
             type: 'circularPie',
             name: '环形饼图'
+          },
+          {
+            type: 'rosePie',
+            name: '玫瑰图'
           },
           {
             type: 'eMap',
