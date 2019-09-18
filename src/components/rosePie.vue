@@ -49,7 +49,7 @@ export default {
                 {
                     name:'半径模式',
                     type:'pie',
-                    radius : [20, 110],
+                    radius : [30, 110],
                     center : ['25%', '50%'],
                     roseType : 'radius',
                     label: {
