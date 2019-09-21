@@ -37,6 +37,22 @@ export default {
                     type: 'pie',
                     radius : '55%',
                     center: ['50%', '60%'],
+                    label: {
+                        normal: {
+                            position: 'outside'
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show:  true,
+                            length: 20,
+                            length2: 50,
+                            lineStyle: {
+                                color: '#ccc',
+                                width: 3
+                            }
+                        }
+                    },
                     data:[
                         {value:335, name:'直接访问'},
                         {value:310, name:'邮件营销'},
