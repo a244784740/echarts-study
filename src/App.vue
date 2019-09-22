@@ -18,6 +18,7 @@ import stackLine from './components/stackLine.vue';
 import pie from './components/pie.vue';
 import circularPie from './components/circularPie';
 import rosePie from './components/rosePie';
+import scatter from './components/scatter';
 import eMap from './components/eMap.vue';
 
 
@@ -31,6 +32,7 @@ export default {
     pie,
     circularPie,
     rosePie,
+    scatter,
     eMap
   },
   data() {
@@ -64,6 +66,10 @@ export default {
           {
             type: 'rosePie',
             name: '玫瑰图'
+          },
+          {
+            type: 'scatter',
+            name: '散点图'
           },
           {
             type: 'eMap',
