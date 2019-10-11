@@ -19,6 +19,7 @@ import pie from './components/pie.vue';
 import circularPie from './components/circularPie';
 import rosePie from './components/rosePie';
 import scatter from './components/scatter';
+import scatterMap from './components/scatterMap';
 import eMap from './components/eMap.vue';
 
 
@@ -33,6 +34,7 @@ export default {
     circularPie,
     rosePie,
     scatter,
+    scatterMap,
     eMap
   },
   data() {
@@ -70,6 +72,10 @@ export default {
           {
             type: 'scatter',
             name: '散点图'
+          },
+          {
+            type: 'scatterMap',
+            name: '散点地图'
           },
           {
             type: 'eMap',
