@@ -21,6 +21,7 @@ import rosePie from './components/rosePie';
 import scatter from './components/scatter';
 import scatterMap from './components/scatterMap';
 import eMap from './components/eMap.vue';
+import fillMap from './components/fillMap.vue';
 
 
 export default {
@@ -35,7 +36,8 @@ export default {
     rosePie,
     scatter,
     scatterMap,
-    eMap
+    eMap,
+    fillMap
   },
   data() {
     return {
@@ -80,6 +82,10 @@ export default {
           {
             type: 'eMap',
             name: '地图'
+          },
+          {
+            type: 'fillMap',
+            name: '填充地图'
           }
       ],
     };
