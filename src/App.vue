@@ -22,7 +22,7 @@ import scatter from './components/scatter';
 import scatterMap from './components/scatterMap';
 import eMap from './components/eMap.vue';
 import fillMap from './components/fillMap.vue';
-
+import migrationMap from './components/migrationMap';
 
 export default {
   name: 'app',
@@ -37,7 +37,8 @@ export default {
     scatter,
     scatterMap,
     eMap,
-    fillMap
+    fillMap,
+    migrationMap
   },
   data() {
     return {
@@ -86,6 +87,10 @@ export default {
           {
             type: 'fillMap',
             name: '填充地图'
+          },
+          {
+            type: 'migrationMap',
+            name: '迁徙地图'
           }
       ],
     };
