@@ -23,6 +23,7 @@ import scatterMap from './components/scatterMap';
 import eMap from './components/eMap.vue';
 import fillMap from './components/fillMap.vue';
 import migrationMap from './components/migrationMap';
+import heatMap from './components/heatMap';
 
 export default {
   name: 'app',
@@ -38,7 +39,8 @@ export default {
     scatterMap,
     eMap,
     fillMap,
-    migrationMap
+    migrationMap,
+    heatMap
   },
   data() {
     return {
@@ -91,6 +93,10 @@ export default {
           {
             type: 'migrationMap',
             name: '迁徙地图'
+          },
+          {
+            type: 'heatMap',
+            name: '热力地图'
           }
       ],
     };
